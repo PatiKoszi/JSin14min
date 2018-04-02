@@ -55,8 +55,67 @@ function reverseString(ddd){
 
 reverseString('patryk kosznik');
 
+function oddEven(arr)
+{
 
+    console.log(arr);
+    for (var i=0; i< arr.length; i++)
+    {
+        if (arr[i] %2 ===0)
+        {
+            console.log('liczba parzysta to: ' + arr[i]);
+        } else
 
+            if (arr[i] %2 ===1)
+            {
+            console.log('liczba nieparzysta to: ' + arr[i]);
+            }
+    }
+}
+oddEven([12,58,27,35]);
+
+function f(num) {
+
+    if (num %2 ===0) {
+        console.log('even');
+    } else
+
+    if (num %2 >0) {
+        console.log('odd');
+    }
+    console.log(num)
+}
+
+f(134);
+
+function filtrowanie(arr)
+{
+    for (var i=0; i< arr.length; i++)
+    {
+        if (arr[i] %2 ===0)
+        {
+            var pofiltrowane = arr.filter(filtrowanie);
+            console.log|(pofiltrowane);
+        }
+    }
+}
+filtrowanie(12,54,33,0,58,7);
+
+function avarage(arr)
+
+{
+    var sum =0;
+    var n=0;
+ for (var i=0; i<arr.length; i++)
+ { var sum = sum +arr[i];
+    n = n+1;
+ }
+ var sr = sum/n;
+ console.log(sum);
+ console.log(sr);
+}
+
+avarage([1,2,3,4,5]);
 
 
 
